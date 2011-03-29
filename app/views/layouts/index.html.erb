@@ -1,0 +1,19 @@
+<% title "Layouts" %>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Name</th>
+  </tr>
+  <% for layout in @layouts %>
+    <tr>
+      <td><%= layout.project_id %></td>
+      <td><%= layout.name %></td>
+      <td><%= link_to "Show", layout %></td>
+      <td><%= link_to "Edit", edit_layout_path(layout) %></td>
+      <td><%= link_to "Destroy", layout, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Layout", new_layout_path %></p>

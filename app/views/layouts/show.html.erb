@@ -1,0 +1,16 @@
+<% title "Layout" %>
+
+<p>
+  <strong>Project:</strong>
+  <%= @layout.project_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @layout.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_layout_path(@layout) %> |
+  <%= link_to "Destroy", @layout, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", layouts_path %>
+</p>

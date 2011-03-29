@@ -1,0 +1,20 @@
+<%= form_for @library do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :project_id %><br />
+    <%= f.text_field :project_id %>
+  </p>
+  <p>
+    <%= f.label :account_id %><br />
+    <%= f.text_field :account_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :global %><br />
+    <%= f.check_box :global %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

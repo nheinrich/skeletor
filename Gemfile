@@ -8,9 +8,10 @@ gem 'compass', '~>0.11.beta.5'
 group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
-  gem 'nifty-generators'  
+  gem 'nifty-generators'
 end
 
 group :test do
   
 end
+gem "mocha", :group => :test

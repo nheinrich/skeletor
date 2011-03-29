@@ -1,0 +1,24 @@
+<% title "Grid" %>
+
+<p>
+  <strong>Project:</strong>
+  <%= @grid.project_id %>
+</p>
+<p>
+  <strong>Columns:</strong>
+  <%= @grid.columns %>
+</p>
+<p>
+  <strong>Width:</strong>
+  <%= @grid.width %>
+</p>
+<p>
+  <strong>Gutter Width:</strong>
+  <%= @grid.gutter_width %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_grid_path(@grid) %> |
+  <%= link_to "Destroy", @grid, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", grids_path %>
+</p>

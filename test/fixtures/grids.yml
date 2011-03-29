@@ -1,0 +1,11 @@
+one:
+  project_id: 1
+  columns: 1
+  width: MyString
+  gutter_width: MyString
+
+two:
+  project_id: 1
+  columns: 1
+  width: MyString
+  gutter_width: MyString

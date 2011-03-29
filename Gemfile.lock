@@ -58,6 +58,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mocha (0.9.12)
     mysql (2.8.1)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -101,6 +102,7 @@ DEPENDENCIES
   capistrano-ext
   compass (~> 0.11.beta.5)
   haml (~> 3.1.0.alpha.147)
+  mocha
   mysql (~> 2.8.1)
   nifty-generators
   rails (~> 3.0.5)

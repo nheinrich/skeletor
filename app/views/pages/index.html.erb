@@ -1,0 +1,23 @@
+<% title "Pages" %>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Name</th>
+    <th>Markup</th>
+    <th>Styles</th>
+  </tr>
+  <% for page in @pages %>
+    <tr>
+      <td><%= page.project_id %></td>
+      <td><%= page.name %></td>
+      <td><%= page.markup %></td>
+      <td><%= page.styles %></td>
+      <td><%= link_to "Show", page %></td>
+      <td><%= link_to "Edit", edit_page_path(page) %></td>
+      <td><%= link_to "Destroy", page, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Page", new_page_path %></p>

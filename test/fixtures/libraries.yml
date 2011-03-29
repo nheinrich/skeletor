@@ -1,0 +1,11 @@
+one:
+  project_id: 1
+  account_id: 1
+  name: MyString
+  global: false
+
+two:
+  project_id: 1
+  account_id: 1
+  name: MyString
+  global: false

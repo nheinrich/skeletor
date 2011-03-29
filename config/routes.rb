@@ -1,4 +1,10 @@
 Skeletor::Application.routes.draw do
+  
+  resources :projects do |project|
+    resource :grid
+    resources :layouts, :libraries, :pages
+  end
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

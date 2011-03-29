@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  overview: MyText
+  announcement: MyText
+  status: MyString
+
+two:
+  name: MyString
+  overview: MyText
+  announcement: MyText
+  status: MyString

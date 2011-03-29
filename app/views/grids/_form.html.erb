@@ -1,0 +1,20 @@
+<%= form_for @grid do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :project_id %><br />
+    <%= f.text_field :project_id %>
+  </p>
+  <p>
+    <%= f.label :columns %><br />
+    <%= f.text_field :columns %>
+  </p>
+  <p>
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </p>
+  <p>
+    <%= f.label :gutter_width %><br />
+    <%= f.text_field :gutter_width %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

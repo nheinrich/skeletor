@@ -1,0 +1,23 @@
+<% title "Grids" %>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Columns</th>
+    <th>Width</th>
+    <th>Gutter Width</th>
+  </tr>
+  <% for grid in @grids %>
+    <tr>
+      <td><%= grid.project_id %></td>
+      <td><%= grid.columns %></td>
+      <td><%= grid.width %></td>
+      <td><%= grid.gutter_width %></td>
+      <td><%= link_to "Show", grid %></td>
+      <td><%= link_to "Edit", edit_grid_path(grid) %></td>
+      <td><%= link_to "Destroy", grid, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Grid", new_grid_path %></p>

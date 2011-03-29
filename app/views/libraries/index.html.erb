@@ -1,0 +1,23 @@
+<% title "Libraries" %>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Account</th>
+    <th>Name</th>
+    <th>Global</th>
+  </tr>
+  <% for library in @libraries %>
+    <tr>
+      <td><%= library.project_id %></td>
+      <td><%= library.account_id %></td>
+      <td><%= library.name %></td>
+      <td><%= library.global %></td>
+      <td><%= link_to "Show", library %></td>
+      <td><%= link_to "Edit", edit_library_path(library) %></td>
+      <td><%= link_to "Destroy", library, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Library", new_library_path %></p>

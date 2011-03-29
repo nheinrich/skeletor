@@ -1,0 +1,11 @@
+one:
+  project_id: 1
+  name: MyString
+  markup: MyText
+  styles: MyText
+
+two:
+  project_id: 1
+  name: MyString
+  markup: MyText
+  styles: MyText
