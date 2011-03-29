@@ -1,9 +1,5 @@
-<%= form_for @page do |f| %>
+<%= form_for new_project_page_path do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :project_id %><br />
-    <%= f.text_field :project_id %>
-  </p>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>

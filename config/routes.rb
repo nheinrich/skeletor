@@ -1,6 +1,6 @@
 Skeletor::Application.routes.draw do
   
-  resources :projects do |project|
+  resources :projects do
     resource :grid
     resources :layouts, :libraries, :pages
   end

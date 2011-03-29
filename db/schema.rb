@@ -10,7 +10,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110329043540) do
+ActiveRecord::Schema.define(:version => 20110329045340) do
+
+  create_table "grids", :force => true do |t|
+    t.integer  "project_id"
+    t.integer  "columns"
+    t.string   "width"
+    t.string   "gutter_width"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "layouts", :force => true do |t|
+    t.integer  "project_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "libraries", :force => true do |t|
+    t.integer  "project_id"
+    t.integer  "account_id"
+    t.string   "name"
+    t.boolean  "global"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.integer  "project_id"
+    t.string   "name"
+    t.text     "markup"
+    t.text     "styles"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "projects", :force => true do |t|
     t.string   "name"
