@@ -2,12 +2,25 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-# If you have a Gemfile, require the gems listed there, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+if defined?(Bundler)
+  # If you have a Gemfile, require the gems listed there, including any gems
+  # you've limited to :test, :development, or :production.
+  Bundler.require(:default, Rails.env) if defined?(Bundler)
+end
+
+Skeletor::Application.configure do
+  config.sass.line_comments = false
+  config.sass.style = :nested
+end
 
 module Skeletor
   class Application < Rails::Application
+    # Enable the asset pipeline
+    config.assets.enabled = true
+    
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

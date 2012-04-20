@@ -1,18 +1,26 @@
 source 'http://rubygems.org'
 
-gem 'mysql', '~>2.8.1'
-gem 'rails', '~>3.0.5'
+gem 'rails', '3.2.3'
+gem 'mysql2', '0.3.11'
+
+gem 'haml', '3.1.4'
+gem 'compass', '0.12.1'
+gem 'compass-rails', '1.0.1'
 gem 'jquery-rails'
-gem 'haml', '~>3.1.0.alpha.147'
-gem 'compass', '~>0.11.beta.5'
+gem 'therubyracer', '0.10.1'
 
 group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
-  gem 'nifty-generators'
 end
 
 group :test do
   
 end
-gem "mocha", :group => :test
+
+group :assets do
+  gem 'sass-rails', '3.2.5'
+  gem 'coffee-rails', '3.2.2'
+  gem 'uglifier', '1.0.2'
+end
+

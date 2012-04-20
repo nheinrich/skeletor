@@ -5,3 +5,4 @@ db/*.sql
 log/*.log
 public/stylesheets/*.css
 tmp/
+.sass-cache/
