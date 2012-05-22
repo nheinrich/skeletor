@@ -16,5 +16,5 @@
 var app = {}
 
 $(document).ready(function(){ 
-  app.flash.init() // ajax flash messages (patterns/flash.js)
+
 })

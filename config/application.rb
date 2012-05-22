@@ -5,12 +5,7 @@ require 'rails/all'
 if defined?(Bundler)
   # If you have a Gemfile, require the gems listed there, including any gems
   # you've limited to :test, :development, or :production.
-  Bundler.require(:default, Rails.env) if defined?(Bundler)
-end
-
-Skeletor::Application.configure do
-  config.sass.line_comments = false
-  config.sass.style = :nested
+  Bundler.require(*Rails.groups(:assets => %w(development test))) if defined?(Bundler)
 end
 
 module Skeletor
@@ -51,5 +46,6 @@ module Skeletor
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
   end
 end

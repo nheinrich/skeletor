@@ -1,0 +1,45 @@
+
+
+body
+  +arial
+  font-size: 18px
+  color: $txt-gray-dark
+  line-height: 1.4em
+
+ 
+// links ---------------------------------------------------------------------
+
+a
+  +hover-link
+
+// headings ------------------------------------------------------------------
+
+h1, h2, h3
+  +times
+  text-rendering: optimizeLegibility
+  line-height: 1.4em
+  margin-bottom: .5em
+  a
+    color: $txt-gray-light
+
+h1
+  font-weight: bold
+
+h1.site  
+  +columns(1)
+  min-width: 45px
+  font-size: 1.5em
+  line-height: 1em
+  background: red
+  a
+    +inline-block
+    +hover-link
+    color: #fff
+    padding: .22em 0 .25em .4em
+
+h1.page
+  font-size: 2.5em
+  span
+    font-size: .70em
+
+h1.section

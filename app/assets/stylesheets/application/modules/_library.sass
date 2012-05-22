@@ -1,0 +1,15 @@
+#library
+  position: absolute
+  top: 80px
+  right: ($gutter-width) * 3
+  width: 250px
+  max-height: 80%
+  padding: 5px
+  font-size: .5em
+  background: #fff
+  border: 10px solid $border-gray-light
+  overflow: hidden
+  > ul > li
+    cursor: move
+    &:hover
+      +single-box-shadow(rgba(0, 0, 255, .2), 0px, 0px, 10px)
