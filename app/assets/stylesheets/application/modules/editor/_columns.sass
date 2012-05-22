@@ -1,0 +1,16 @@
+#canvas
+  > .column
+    height: 300px
+  .column
+    +float-left
+    width: 100%
+    min-height: 40px
+    +single-box-shadow(rgba(0,0,0,.1), 0px, 0px, 0px, 1px, inset)
+    &:hover
+      +single-box-shadow(aquamarine, 0px, 0px, 0px, 1px, inset)
+    &.selected, 
+    &.selected:hover
+      +single-box-shadow(gold, 0px, 0px, 0px, 1px, inset)
+  .item
+    &:hover
+      +single-box-shadow(blue, 0px, 0px, 0px, 1px, inset)

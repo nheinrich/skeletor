@@ -5,6 +5,9 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery-ui-1.8.20.custom.min
+//= require jquery.cookie
+
 //= require_self
 //= require_tree .
 

@@ -1,0 +1,20 @@
+#library
+  display: none
+  position: absolute
+  top: 87px
+  right: ($gutter-width) * 4
+  width: 250px
+  max-height: 80%
+  font-size: .5em
+  background: #fff
+  border: 5px solid $border-gray-light
+
+  hgroup
+    background: $border-gray-light
+
+  > ul 
+    padding: 5px
+    > li
+      cursor: move
+      &:hover
+        +single-box-shadow(rgba(0, 0, 255, .2), 0px, 0px, 10px)
